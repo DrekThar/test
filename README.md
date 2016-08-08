@@ -27,13 +27,6 @@ CREATE TABLE IF NOT EXISTS `album` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE IF NOT EXISTS `country` (
-  `code` char(2) NOT NULL,
-  `name` char(52) NOT NULL,
-  `population` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 CREATE TABLE IF NOT EXISTS `photo` (
   `id` int(14) NOT NULL AUTO_INCREMENT,
   `album_id` int(10) NOT NULL,
